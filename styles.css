@@ -235,7 +235,7 @@ section:not(:last-child)::after {
 
 .personal-photo {
   width: 220px;          /* rectangle width */
-  height: 300px;         /* rectangle height (taller than wide) */
+  height: 220px;         /* rectangle height (taller than wide) */
   
   border-radius: 12px;   /* rounded rectangle, not a circle */
   border: 4px solid #343a40;
