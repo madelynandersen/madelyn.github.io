@@ -258,3 +258,40 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+/* 2-column site layout */
+.layout {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Sticky sidebar */
+.sidebar {
+  position: sticky;
+  top: 90px; /* adjust based on header height */
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Main content column */
+.content section {
+  /* your existing section styles can stay */
+}
+
+/* Mobile: stack */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+}
